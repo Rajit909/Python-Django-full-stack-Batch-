@@ -9,6 +9,7 @@
     <script src="script.js"></script>
 </head>
 <body>
+    <main>
 <!-- Html tags -->
 <h2>Html headings</h2>
 <p>
@@ -69,6 +70,11 @@ Example of style tag
 <p>
     The div tag is used to group block-elements to format them with CSS.
 </p>
+<div style="width: 450px; height: 150px; background-color: aqua; display: flex; flex-direction: row;">
+    <div style="background-color: blueviolet; width: 40%;">left</div>
+    <div style="background-color: rgb(16, 159, 47); width: 40%;">right</div>
+</div>
+
 Example of div tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
 <div style="background-color: lightblue">
@@ -79,17 +85,38 @@ Example of div tag
 
 <h2>span tag</h2>
 <p>
-    The span tag is used to group inline-elements in a document.
+    The span tag is used to group inline-elements in a document. 
 </p>
 Example of span tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
-<p>An <span style="color: blue">HTML</span> element is a type of HTML element.</p>
+    <p>An <span style="color: blue">HTML</span> element is a type of HTML element.</p>
 </script>
 
 <h2>header tag</h2>
 <p>
     The header tag is used to define a header for a document or a section.
 </p>
+<header style="background-color: gray;">
+    <nav>
+        <ul>
+            <a href="/">
+                <li>Home</li>
+            </a>
+            <a href="/about">
+
+                <li>About</li>
+            </a>
+            <a href="/contact">
+
+                <li>Contat</li>
+            </a>
+            <a href="/blog">
+                <li>Blog</li>
+            </a>
+        </ul>
+    </nav>
+</header>
+
 
 Exampl of header tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
@@ -142,7 +169,9 @@ Example of section tag
 <p>
     The article tag is used to define an article in a document.
 </p>
-
+<article>
+    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit minima mollitia numquam! Voluptatum molestiae maiores corporis ipsa aperiam iusto totam quas, officiis a nobis amet nisi perspiciatis fugit mollitia esse?
+</article>
 Example of article tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
 <article>
@@ -155,6 +184,8 @@ Example of article tag
 <p>
     The aside tag is used to define content aside from the content (like a sidebar).
 </p>
+<h4>aside</h4>
+<aside>aside like a sidebar</aside>
 Example of aside tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
     <aside>
@@ -172,6 +203,11 @@ Example of aside tag
 <p>
     The details tag is used to define additional details that the user can view or hide.
 </p>
+<details>
+    <summary>Html</summary>
+    <p>Html is a hyper text markup language</p>
+</details>
+
 Example of details tag
 <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
     <details>
@@ -197,17 +233,236 @@ Example of footer tag
             
     </footer>
 </script>
+<h2>List in html</h2>
+<p>
+    there are two types of list html 
+    1. Orderd List
+    2. Un-Ordered List
+</p>
+
+<h3>Ordered list</h3>
+<ol type="1">
+    <li>Python</li>
+    <li>css</li>
+    <li>Java</li>
+</ol>
+<ol type="A">
+    <li>Python</li>
+    <li>css</li>
+    <li>Java</li>
+</ol>
+<ol type="a">
+    <li>Python</li>
+    <li>css</li>
+    <li>Java</li>
+</ol>
+<ol type="I">
+    <li>Python</li>
+    <li>css</li>
+    <li>Java</li>
+</ol>
+<ol type="i">
+    <li>Python</li>
+    <li>css</li>
+    <li>Java</li>
+</ol>
+
+<h3>Un-Ordered list</h3>
+<ul style="list-style-type: circle;">
+    <li>home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+<ul style="list-style-type: disc;">
+    <li>home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+<ul style="list-style-type:square;">
+    <li>home</li>
+    <li>About</li>
+    <li>Contact</li>
+</ul>
+
+<h2>Html forms</h2>
+<p>
+    The form tag is used to create an HTML form for user input.
+</p>
+
+<script style="display: block; white-space: pre; background-color: rgb(107, 176, 211);" type="text/html">
+    <div >
+
+        <form action="">
+            <label for="name">Name</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br><br>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
+        <label for="gender">Gender: </label>
+        Male
+        <input type="radio" >
+        female
+        <input type="radio" >
+        <br><br>
+        <label for="phone">Phone no.: </label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter phone no.">
+        <br><br>
+        <label for="birth">D.O.B:</label>
+        <input type="date" name="birth" id="birth">
+        <br><br>
+        <label for="address">Address</label>
+        <textarea name="address" id="address" cols="30" rows="8" placeholder="Enter your address"></textarea>
+        <br><br>
+        <input type="button" value="Submit">
+    </form>
+    </div>
+    
+</script>
+<h3>Output:</h3>
+<div style="background-color: gray;">
+
+    <form action="">
+        <label for="name">Name</label>
+    <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
+    <label for="email">Email</label>
+    <input type="email" name="email" id="email" placeholder="Enter your email"><br><br>
+    <label for="password">Password</label>
+    <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
+    <label for="gender">Gender: </label>
+    Male
+    <input type="radio" >
+    female
+    <input type="radio" >
+    <br><br>
+    <label for="phone">Phone no.: </label>
+    <input type="tel" name="phone" id="phone" placeholder="Enter phone no.">
+    <br><br>
+    <label for="birth">D.O.B:</label>
+    <input type="date" name="birth" id="birth">
+    <br><br>
+    <label for="address">Address</label>
+    <textarea name="address" id="address" cols="30" rows="8" placeholder="Enter your address"></textarea>
+    <br><br>
+    <input type="button" value="Submit">
+</form>
+</div>
+
+<h2>Html table</h2>
+<p>
+    The table tag is used to create a table in html.
+    table
+    tr
+    th
+    td
+
+</p>
+<style>
+    table, tr, th, td {
+        border: 1px solid black;
+        border-collapse: collapse;
+    }
+    th, td {
+        padding: 15px;
+        text-align: left;
+    }
+</style>
+
+<table >
+    <tr>
+        <th>Sr. no.</th>
+        <th>Name</th>
+        <th>Phone</th>
+        <th>Email</th>
+        <th>roll</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>JOhn</td>
+        <td>1234567890</td>
+        <td>jdshjdf@gmail.com</td>
+        <td>123</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>devid</td>
+        <td>1234567890</td>
+        <td>jhjdf@gmail.com</td>
+        <td>124</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>devid</td>
+        <td>1234567890</td>
+        <td>jhjdf@gmail.com</td>
+        <td>124</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>devid</td>
+        <td>1234567890</td>
+        <td>jhjdf@gmail.com</td>
+        <td>124</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>devid</td>
+        <td>1234567890</td>
+        <td>jhjdf@gmail.com</td>
+        <td>124</td>
+    </tr>
+</table>
+<hr>
+<h1>Html media</h1>
+<hr>
+<h2>Html image</h2>
+<p>
+    The image tag is used to define an image in an HTML page.
+</p>
+
+<img src="/Html/download (2).png" alt="image" width="450" height="200">
+
+<h3>Video tag</h3>
+<p>
+    The video tag is used to define a video in an HTML page.
+</p>
+
+<video width="380" height="240" controls autoplay muted>
+    <source src="/Html/mov_bbb.mp4" type="video/mp4">
+    <source src="/Html/mov_bbb.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+</video>
+
+<h3>Audio tag</h3>
+<p>
+    The audio tag is used to define a sound or music file in an HTML page.
+</p>
+
+<audio controls autoplay muted>
+    <source src="TunePocket-Laid-Back-Guitar-Intro-Preview.ogg" type="audio/ogg">
+    <source src="TunePocket-Laid-Back-Guitar-Intro-Preview.mp3" type="audio/mp3">
+    Your browser does not support the audio tag.
+</audio>
 
 
 
-
-
-
-
-
-
-
-
+<hr>
+<footer style="background-color: bisque;">
+    <ul>
+        <li>Home</li>
+        <li>Contact</li>
+        <li>About</li>
+        <li>Blog</li>
+    </ul>
+    <div>
+        <p>Facebook</p>
+        <p>insta</p>
+        <p>twitter</p>
+        <p>github</p>
+    </div>
+</footer>
+<hr>
+</main>
 
 
 </body>
