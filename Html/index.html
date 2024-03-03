@@ -455,19 +455,20 @@
             <source src="TunePocket-Laid-Back-Guitar-Intro-Preview.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
         </audio>
+
         <h2>Fieldset in html</h2>
         <p>
             The fieldset tag is used to group related elements in a form.
         </p>
-        <fieldset>
-            <legend>Personal Information</legend>
-            <label for="name">Name</label>
-            <input type="text" name="name" id="name" placeholder="Enter your name"><br><br>
-            <label for="email">Email</label>
-            <input type="email" name="email" id="email" placeholder="Enter your email"><br><br>
-            <label for="password">Password</label>
-            <input type="password" name="password" id="password" placeholder="Enter your password"><br><br>
 
+        <fieldset>
+            <legend>Login form</legend>
+            <label for="login">Username or email</label>
+            <input type="text" name="" id="" placeholder="Ente your Username">
+           <br> <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="Enter your password">
+            <br>
+            <input type="button" value="Login">
         </fieldset>
 
         <h2>datalist </h2>
@@ -476,16 +477,14 @@
         </p>
 
 
-        <label for="myBrowser">Choose browser from given list</label>
-        <input list="browser" id="myBrowser" name="myBrowser" />
+        <label for="myBrowser">choose your browser from given list</label>
+        <input list="browser" name="myBrowser" id="myBrowser">
         <datalist id="browser">
             <option value="Edge"></option>
-            <option value="Edge"></option>
-            <option value="Edge"></option>
-            <option value="Edge"></option>
-            <option value="Edge"></option>
-            <option value="Edge"></option>
-
+            <option value="Chrome"></option>
+            <option value="Safari"></option>
+            <option value="Opera"></option>
+            <option value="Internet ploral"></option>
         </datalist>
 
         <h2>description list</h2>
@@ -493,24 +492,32 @@
             The "dl" HTML element represents a description list.
         </p>
 
+        <dl>
+            <dt>Html</dt>
+            <dd>Hyper text markup language</dd>
+        </dl>
+
         <script style="display: block; white-space: pre; background-color: gray;" type="text/html">
     <dl>
         <dt>description list</dt>
         <dd>The "dl" HTML element represents a description list. </dd>
     </dl>
 </script>
+
+
 <br><br>
 <h1>iframe tag</h1>
 <p>
     The iframe HTML element represents a nested browsing context, embedding another HTML page into the current one.
 </p>
 Example: 
-<!-- <iframe
+<iframe
   width="100%"
   height="400"
   title="Wikipedia page for Avocados"
-  src="https://en.wikipedia.org/wiki/Avocado">
-</iframe> -->
+  src="https://en.wikipedia.org/wiki/mango">
+</iframe>
+
 
 <h2>script tag</h2>
 <p>
@@ -546,6 +553,8 @@ Example:
     markup language used to create the semantics and structure of a web page.
   </p>
 
+  <abbr title="asyncronus JavaScript xml">Ajax</abbr>
+
 
   <h2>address tag</h2>
   <p>
@@ -553,16 +562,16 @@ Example:
   </p>
 
   <address>
-    You can contact author at
-    <a href="http://www.example.com/contact">www.example.com</a>.<br />
-    If you see any bugs, please
-    <a href="mailto:webmaster@example.com">contact webmaster</a>.<br />
-    You may also want to visit us:<br />
-    Mozilla Foundation<br />
-    331 E Evelyn Ave<br />
-    Mountain View, CA 94041<br />
-    USA
-  </address>
+      You can contact author at
+      <a href="http://www.example.com/contact">www.example.com</a>.<br />
+      If you see any bugs, please
+      <a href="mailto:webmaster@example.com">contact webmaster</a>.<br />
+      You may also want to visit us:<br />
+      Mozilla Foundation<br />
+      331 E Evelyn Ave<br />
+      Mountain View, CA 94041<br />
+      USA
+    </address>
   
 <h2>blockqoute tag</h2>
 <p>
@@ -580,6 +589,14 @@ Example:
       avoidance system, which increases availability.
     </p>
   </blockquote>
+
+  html :
+  <blockquote>
+  <p>
+      
+      Html is a HyperText markup language
+    </p>
+      </blockquote>
   
 <h2>s tag</h2>
 <p>
@@ -587,15 +604,18 @@ Example:
 </p>
 Example
 <p>
-    <s>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus.
-    </s>
+    <s>    
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Enim, omnis.
+    </s><br>
+    This is correct text: Lorem ipsum dolor sit amet.
+
 </p>
 
 <h2>samp tag</h2>
 <p>
     The <samp> HTML element is used to enclose inline text which represents sample (or quoted) output from a computer program.
 </p>
+Example:
 <p>I was trying to boot my computer, but I got this hilarious message:</p>
 
 <p>
@@ -619,11 +639,8 @@ example
     The strong tag is used to define important text.
 </p>
 example
-<p>
-    <strong>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, minus.
-    </strong>
-</p>
+<p><strong>Html</strong> is a Hyper text markup language</p>
+
 
 <h2>template tag</h2>
 <p>
@@ -631,8 +648,8 @@ example
 </p>
 example
 <template>
-    <h2>Template</h2>
-    <p>Reusable HTML content</p>
+    username : user@1233,
+    password : 123456
 </template>
 
 <h2>time tag</h2>
