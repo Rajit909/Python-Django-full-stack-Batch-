@@ -74,4 +74,71 @@ img{
 }
 .font{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #a52a2a;
+
+}
+/* a{
+    color: yellow;
+    text-decoration: none;
+    font-size: 50px;
+    line-height: 30px;
+} */
+span{
+    color: aqua;
+    font-size: 30px;
+}
+details{
+    padding: 10px;
+    background-color: #7d95d3;
+}
+
+/* anchor tag have four values
+    link
+    visited
+    hover 
+    active
+*/
+a:link{
+    font-size:larger;
+    padding: 15px;
+    /* text-decoration: none; */
+    /* color: #a52a2a;
+    background:#c8d3b7; */
+    /* text-decoration: none; */
+    /* text-decoration:underline; */
+}
+/* 
+a:visited{
+    text-decoration: none;
+    background-color: yellow;
+}
+a:hover{
+    text-decoration: underline;
+    background-color: white;
+    color: black;
+    font-size: 40px;
+}
+a:active{
+    background-color: red;
+    color: white;
+} */
+a:link, a:visited {
+    background-color: white;
+    color: Red;
+    text-align: center;
+    text-decoration: none;
+}
+
+a:hover, a:active{
+    background-color: black;
+    color: white;   
+}
+.list{
+    list-style: square inside url("");
+}
+table{
+    text-align: center;
+}
+table, th,td{
+    border:1px solid black
 }
