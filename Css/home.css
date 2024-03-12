@@ -1,0 +1,98 @@
+/* .float{
+    border: 2px black solid;
+
+}
+.div1{
+    float: left;
+    padding: 12px;
+    border: 2px green solid;
+    
+}
+.div2{
+ padding: 10px;
+ border: 2px blue solid;
+}
+
+.div3{
+    float: left;
+    padding: 12px;
+    border: 2px red solid;
+}
+.div4{
+    padding: 10px;
+    border: 2px yellow solid;
+    clear: left;
+} */
+.container{
+    border: 2px black solid;
+}
+.div1{
+    border: 2px green solid;
+}
+
+.img1{
+    float: left;
+}
+.img2{
+    float: left;
+}
+.clearfix{
+    border: 2px red solid;
+    overflow: auto;
+}
+span{
+    background-color: yellow;
+}
+div{
+    padding: 20px;
+}
+span.a{
+    display: inline;    /* default for span we can not apply margin and padding, hight , width */
+    width: 100px;   /*margin top & bottom not allowed*/
+    height: 100px;      /* margin left & right allowed*/
+    padding: 5px;
+    border: 1px solid black;
+}
+span.b{
+    display: inline-block;    /* apply all properties*/
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+span.c{ 
+    display: block;/* not in inline*/
+    width: 100px;
+    height: 100px;
+    padding: 5px;
+    border: 1px solid black;
+}
+
+/* horizontel navigation */
+/* .nav-items{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #333;
+    padding: 5px 0px;
+    color: white;
+    list-style-type: none;
+} */
+
+/* vertical  */
+.nav-items{
+    display: block;
+    background-color: gray;
+    list-style-type: none;
+
+}
+.nav-items li{
+    padding: 10px;
+    color: white;
+    cursor: pointer;
+}
+.nav-items li:hover{
+    background-color: black;
+}
+
+
