@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css transition</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .effect1{
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            transition:width 2s, ease-in 0.5s;
+        }
+        .effect1:hover{
+            background-color: blue;
+            width: 400px;
+            /* border-radius: 50%; */
+        }
+        .effect2{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+
+        }
+        .effect2:hover{
+            background-color: blue;
+            margin-top: 200px;
+            margin-left: 200px;
+        }
+        .effect3{
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            transition-duration: 2s;
+            transition-timing-function: ease-out;
+
+
+        }
+        .effect3:hover{
+            background-color: green;
+            width: 400px;
+        }
+        .effect4{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+
+
+        }
+        .effect4:hover{
+            background-color: blue;
+            width: 400px;
+        }
+        .trasnform{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            transition: width 2s, hight 2s, transform 2s;
+        
+        }
+        .trasnform:hover{
+            width: 200px;
+            height: 200px;
+            background-color: blue;
+            transform: rotate(360deg);
+        }
+    </style>
+
+</head>
+
+<body>
+
+  
+
+    <div>
+        <h2>transition property</h2>
+        <p>hover over the div to see the transition effect</p>\
+        <p>
+            transition,
+            transition-duration,
+            transition-property,
+            transition-timing-function,
+            :  ease, ease-in, ease-out, ease-in-out, linear, cubic-bezier(n,n,n,n),
+        </p>
+
+        <!-- <div class="effect1"></div><br><br> -->
+        <!-- <div class="effect2"></div><br><br>
+        <div class="effect3"></div><br><br>
+        <div class="effect4"></div><br><br> -->
+    </div>
+    <div>
+        <h2>transition + transform property</h2>
+        <p>hover over the div to see the transform effect</p>
+        <div class="trasnform">
+
+        </div>
+<br><br><br><br><br>
+        <h2>Diffrence between alpha opacity and opacity</h2>
+        <div class="opacity" >
+            opacity applies all the children of the element
+        </div>
+        <div class="alpha-opacity">
+            Alpha opacity applies only element
+        </div>
+
+        <br>
+        <div>
+            <h2>Css gradient background</h2>
+            <p>
+                css gradient let you display smooth transition between two or more specified colors
+            </p>
+
+        </div>
+    </div>
+</body>
+</html>
